@@ -1,6 +1,8 @@
 package cn.itcast.eshop.user;
 
 import cn.itcast.eshop.common.action.BaseAction;
+import cn.itcast.eshop.common.entity.Msg;
+import cn.itcast.eshop.common.util.JSONUtil;
 
 /**
  * 用户控制器类
@@ -18,7 +20,12 @@ public class UserAction extends BaseAction {
      * @return
      */
     public String login(){
-        return "";
+        System.out.println("username"+username);
+        System.out.println("password"+password);
+        Msg msg = new Msg();
+        msg.setType(Msg.SUCCESS);//登录成功
+        msg.setMsg("返回信息");
+        return JSONUtil.entity2JSON(msg);
     }
 
     public String getUsername() {

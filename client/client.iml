@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="corretto-1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="user" />
+    <orderEntry type="module" module-name="common" />
   </component>
 </module>
